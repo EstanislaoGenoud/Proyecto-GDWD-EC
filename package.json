@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-gdwd-ec",
+  "version": "1.0.0",
+  "description": "tienda e-commerce de Genoud Distribuciones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Genoud Estanislao",
+  "license": "ISC"
+}
