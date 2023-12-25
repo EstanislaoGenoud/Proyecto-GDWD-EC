@@ -22,9 +22,9 @@ nav{
             a{
                 position: relative;
                 padding-bottom: .75rem;
-                color: #FFF;
+                color: #000;
                 text-decoration: none;
-                font-size: 1.6rem;
+                font-size: 1.2rem;
 
                 &::after{
                     content: "";
@@ -49,7 +49,7 @@ nav{
     gap: 1rem;
     font-size: 1.8rem;
     justify-content: start;
-    color: #FFF;
+    color: #000;
 
     .logo{
         width: 50px;
