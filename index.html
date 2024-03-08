@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--     ICONS     -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
         <!--   BOOTSTRAP   -->
         <link rel="stylesheet" href="./css/bootstrap.css">
         <!--      JS       -->
@@ -28,7 +29,7 @@
           <a href="">Inicio</a>
         </li>
         <li class="link--per">
-          <a href="">Productos</a>
+          <a href="./pages/products.html">Productos</a>
         </li>
         <li class="link--per">
           <a href="">Contacto</a>
@@ -38,18 +39,34 @@
         </li>
       </ul>
     </nav>
+    <!-- Carrito -->
+    <section id="Carrito" class="d-flex justify-content-between p-4 buy-per">
+        <button id="btnModalCarrito" type="button" class="btn-primary">
+          <i class="ri-shopping-cart-line"></i>
+            <span id="cartCount" class="badge text-bg-secondary">0</span>
+        </button>
+    </section>
     <!-- imagen de fondo o ilustrativa (relleno) -->
+    <section class="information">
+      <div class="imgInf">
+        <img src="./assets/fondo/picadailu.jpg" alt="Imagen Ilustriva de una picada de fiambres" class="imgIlu">
+      </div>
+      <div class="capa"></div>
+      <div class="textInf">
+        <p class="inf">Somos Genoud Distribuciones. Una empresa distribuidora de alimentos localizada en la ciudad de San Pedro, en la gran provincia de Buenos Aires. Nos especializamos en productos de almacén. Atendemos al público en general.</p>
+        <p class="infTwo">Nuestra página es un recurso completo y accesible donde puedes encontrar información sobre nuestra empresa y los servicios que ofrecemos. Estamos comprometidos en brindarte una experiencia satisfactoria y responder a tus necesidades de manera eficiente.</p>
+        <p class="infThree">Nosotros trabajamos diariamente para formar parte de sus opciones más confiables.</p>
+      </div>
+    </section>
     <main class="contenedor">
       <!-- imagenes ilustrativas -->
       <div class="ilustration">
         <div class="pages-ilustration">
-          
           <!-- img -->
           <img src="./assets/cards/linea-214-champion.jpg" alt="" class="img-card">
           <button class="btn centrado">FIAMBRES</button>
         </div>
         <div class="pages-ilustration">
-          
           <!-- img -->
           <img src="./assets/cards/quesosTremblay.jpg" alt="" class="img-card">
           <button class="btn centrado">QUESOS</button>
@@ -68,36 +85,28 @@
         </div>
       </div>
     </main>
-      <section class="clientes">
-        <div class="cl-uno">
-          <i class="bx bx-world"></i>
-          <h3>7</h3>
-          <p>Localidades en las que se encuentran nuestros productos.</p>
-        </div>
-        <div class="cl-dos">
-          <i class="bx bx-file"></i>
-          <h3>315</h3>
-          <p>Nuestros Productos</p>
-        </div>
-        <div class="cl-tres">
-          <i class="bx bx-smile"></i>
-          <h3>545</h3>
-          <p>Clientes Contentos</p>
-        </div>
+      <section class="clientsIlu">
+        <!-- <img src="./assets/fondo/picada ilu2.jpg" alt="Imagen Ilustrativa de una picada de fiambres" class="imgIlu">
+        <div class="capa"></div> -->
+        <section class="clientes">
+          <div class="cl-uno">
+            <i class="bx bx-world"></i>
+            <h3>7</h3>
+            <p>Localidades en las que se encuentran nuestros productos.</p>
+          </div>
+          <div class="cl-dos">
+            <i class="bx bx-file"></i>
+            <h3>315</h3>
+            <p>Nuestros Productos</p>
+          </div>
+          <div class="cl-tres">
+            <i class="bx bx-smile"></i>
+            <h3>545</h3>
+            <p>Clientes Contentos</p>
+          </div>
+        </section>
       </section>
       <footer>
-        <section class="pie-de-pagina">
-        <section class="follow">
-          <ul>
-            <li class="link-item">
-              <a href="https://www.facebook.com/distribuciones.genoud.9" target="_blank"><i class="bx bxl-facebook"></i>Facebook</a>
-            </li>
-            <li class="link-item">
-              <a href="https://www.instagram.com/distribucionesgenoud/" target="_blank" ><i class="bx bxl-instagram"></i>Instagram</a>
-            </li>
-          </ul>
-        </section>
-        </section>
         <section class="credits">
           <div class="container--logo">
             <a href="#"
@@ -107,6 +116,16 @@
           <span>&copy; 2023</span>
         </section>
           <p class="texto-pdp">Libertad 385, San Pedro, Buenos Aires. Arg</p>
+          <div class="redes">
+            <ul>
+              <li class="link-item">
+                <a href="https://www.facebook.com/distribuciones.genoud.9" target="_blank"><i class="bx bxl-facebook"></i>Facebook</a>
+              </li>
+              <li class="link-item">
+                <a href="https://www.instagram.com/distribucionesgenoud/" target="_blank" ><i class="bx bxl-instagram"></i>Instagram</a>
+              </li>
+            </ul>
+          </div>
       </footer>
 </body>
 </html>

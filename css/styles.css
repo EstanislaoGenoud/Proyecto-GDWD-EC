@@ -117,7 +117,11 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-evenly;
-  gap: 12.5rem;
+  gap: 200px;
+  position: absolute;
+  top: 300px;
+  left: 20%;
+  color: rgb(255, 255, 255);
 }
 .clientes .cl-uno,
 .clientes .cl-dos,
@@ -125,32 +129,81 @@ body {
   font-weight: 600;
   height: 150px;
   width: 250px;
-  background-color: rgba(255, 255, 255, 0.1176470588);
+  background-color: rgba(255, 255, 255, 0.0549019608);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 5px;
   border: 1px solid;
   border-radius: 20px;
 }
 
+.information {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 90vh;
+}
+.information .imgIlu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.information .capa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+.information .textInf {
+  position: absolute;
+  top: 270px;
+  z-index: 10;
+  width: 75%;
+  text-align: center;
+  left: 270px;
+  color: rgba(255, 255, 255, 0.5764705882);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin: 10px;
+  justify-content: space-around;
+  gap: 16px;
+  font-size: 1.25rem;
+}
+
+.clientsIlu {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+}
+.clientsIlu .capa {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 20px;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+.clientsIlu .imgIlu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 20px;
+}
+
 footer {
   background-color: #222;
   width: 100%;
-  height: 45vh;
+  height: 17vh;
   margin-top: 20px;
 }
-footer .pie-de-pagina {
-  width: 100%;
-  height: 250px;
-  color: #FDFDFD;
-  display: flex;
-  justify-content: space-between;
-}
-footer .follow {
+footer .redes {
   display: inline-block;
   position: relative;
-  left: 1240px;
 }
-footer .follow .link-item a {
+footer .redes .link-item a {
   color: #FDFDFD;
   cursor: pointer;
   display: flex;
@@ -158,7 +211,7 @@ footer .follow .link-item a {
   text-decoration: none;
   gap: 6px;
 }
-footer .follow .link-item a .bx {
+footer .redes .link-item a .bx {
   font-size: 1.4rem;
 }
 footer .credits {
@@ -184,6 +237,14 @@ footer .texto-pdp {
   text-align: center;
   font-size: 1.25rem;
   color: rgba(0, 0, 0, 0.329);
+}
+
+#map {
+  position: relative;
+  right: 430px;
+  bottom: 47px;
+  height: 250px;
+  width: 250px;
 }
 
 /*# sourceMappingURL=styles.css.map */
