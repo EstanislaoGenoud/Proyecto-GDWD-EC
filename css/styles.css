@@ -56,8 +56,26 @@ nav .nav--links .link--per a:hover::after {
   color: #000;
 }
 .nav--logo .logo {
-  width: 50px;
+  width: 60px;
   border-radius: 9px;
+}
+
+.btnCart {
+  position: fixed;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  border-radius: 9px;
+  top: 6px;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btnCart:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
 }
 
 body {
@@ -104,6 +122,19 @@ body {
   transition: all 0.3s ease;
 }
 .contenedor .ilustration .pages-ilustration .btn:hover {
+  background-color: #1e40af;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1d4ed8;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
   background-color: #1e40af;
 }
 
@@ -232,6 +263,9 @@ footer .texto-pdp {
 }
 .recommended .recommendedProducts .cardPer:hover {
   transform: scale(1.1);
+}
+.recommended .recommendedProducts .cardPer img {
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

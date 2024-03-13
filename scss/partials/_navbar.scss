@@ -52,7 +52,24 @@ nav{
     color: #000;
 
     .logo{
-        width: 50px;
+        width: 60px;
         border-radius: 9px;
+    }
+}
+.btnCart{
+    position: fixed;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+    border-radius: 9px;
+    top: 6px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: #1e40af;
+        border-color: #1e40af;
     }
 }
