@@ -40,8 +40,7 @@ fetch('json/data.json')
     return response.json();
 })
 .then(data =>{
-    for(let i = 0; i<3; i++){
-        data.ilustration.forEach(item => {
+        data.ilustration.slice(0, 4).forEach(item => {
             const pagesIlustration = document.createElement('div');
             pagesIlustration.classList.add('pages-ilustration');
 
@@ -58,6 +57,7 @@ fetch('json/data.json')
 
             contentIlustration.appendChild(pagesIlustration);
         });
-    }
+    
 })
 .catch(error => console.error(error));
+// Fin de la seccion de tarjetas de ilustracion
