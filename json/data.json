@@ -1,0 +1,8 @@
+{
+    "ilustration":[
+        {"id": 1, "clase": "FIAMBRES", "img-card": "src", "src": "./assets/cards/linea-214-champion.jpg"},
+        {"id": 2, "clase": "QUESOS", "img-card": "src", "src": "./assets/cards/quesosTremblay.jpg"},
+        {"id": 3, "clase": "LACTEOS", "img-card": "src", "src": "./assets/cards/lacteoCotar.jpg"},
+        {"id": 4, "clase": "PRODUCTOS VARIOS", "img-card": "src", "src": "./assets/cards/fachitasCoronitas.png"}
+    ]
+}
