@@ -1,6 +1,6 @@
 // Seccion de Botones Carrito
-const btnCart = document.querySelector('.btnCart');
-const CartCount = document.querySelector('#cartCount'); 
+const cart = document.querySelector('#Carrito');
+const btnModalCarrito = document.querySelector('#btnModalCarrito');
 // Seccion de Ilustracion
 const contentIlustration = document.querySelector('.ilustration');
 // Seccion de productos Recomendados
@@ -56,8 +56,30 @@ fetch('json/data.json')
             pagesIlustration.appendChild(pagesBtn);
 
             contentIlustration.appendChild(pagesIlustration);
+
+            
+
+
+
+            pagesBtn.addEventListener('click', () =>{
+                window.location.href = './pages/products.html';
+            })
         });
+    })
+    .catch(error => console.error(error));
+    // Fin de la seccion de tarjetas de ilustracion
+
+    // Seccion de Botones Carrito
+    const carrito = document.createElement('button');
+    carrito.classList.add('btnCart');
+    carrito.setAttribute('id', 'btnModalCarrito');
+    carrito.innerHTML = '<i class="ri-shopping-cart-line"></i>';
+    const cartCount = document.createElement('span');
+    cartCount.setAttribute('id', 'cartCount');
+    cartCount.classList.add('badge', 'text-bg-secondary');
+    cartCount.textContent = '0';
     
-})
-.catch(error => console.error(error));
-// Fin de la seccion de tarjetas de ilustracion
+
+
+    carrito.appendChild(cartCount);
+    cart.appendChild(carrito);
